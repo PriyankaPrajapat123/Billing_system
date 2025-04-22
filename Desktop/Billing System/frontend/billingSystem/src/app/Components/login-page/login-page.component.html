@@ -1,0 +1,44 @@
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <!-- <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top"> -->
+Billing System      </a>
+    </div>
+  </nav>
+
+  <section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>Online Payment</h2>
+                <a href="">Learn More</a>
+            </div>
+            <div class="col-lg-6">
+                <div style="display: flex; justify-content: center; margin-top: 80px;">
+                    <mat-card style="width: 400px;">
+                      <h2 style="text-align: center;">Admin Login</h2>
+                      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                        <mat-form-field appearance="outline" style="width: 100%; margin-top: 20px;">
+                          <mat-label>Username</mat-label>
+                          <input matInput formControlName="username" />
+                        </mat-form-field>
+                  
+                        <mat-form-field appearance="outline" style="width: 100%; margin-top: 20px;">
+                          <mat-label>Password</mat-label>
+                          <input matInput type="password" formControlName="password" />
+                        </mat-form-field>
+                  
+                        <div style="margin-top: 30px; text-align: center;">
+                          <button mat-raised-button color="primary" type="submit" >
+                            LOGIN
+                          </button>
+                        </div>
+                      </form>
+                    </mat-card>
+                  </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  
